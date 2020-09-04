@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+html {
+  background-color: #fafafa;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+a {
+  color: black !important;
+}
+
+/* Remove after removing materialize */
+button.MuiButton-root:focus {
+  background-color: #3f51b5;
+}
+
+button.MuiIconButton-root:focus {
+  background-color: white;
+}
+/* Sign Up */
+
+.signupForm {
+  text-align: center;
+}
+
+.signupLine {
+  font-weight: bold;
+  margin: 20px 20px;
+  color: #aaaaaa;
+}
+
+button.signupButton {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 90%;
+}
+
+/* Login */
+
+div.MuiGrid-spacing-xs-3 {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.loginForm {
+  text-align: center;
+}
+
+.brand-logo {
+  font-family: 'Grand Hotel', cursive;
+  margin-left: 1.5rem;
+} 
+
+.loginCard {
+  text-align: center;
+  max-width: 350px;
+  padding: 20px;
+  margin: 70px auto;
+  border: 1px solid darkgray;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 
+              0 3px 1px -2px rgba(0,0,0,0.12), 
+              0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+div.imageGrid {
+  width: 500px;
+  margin: 0 auto;
+}
+
+div.imageGrid ul {
+  width: 100%;
+}
+
+#loginHead {
+  font-family: 'Grand Hotel', cursive;
+  font-size: 60px;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+button.loginButton {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  width: 90%;
+}
+
+.links { 
+  color:blue !important; 
+  text-decoration:underline; 
+  cursor:pointer;
+}
+
+.signup-link {
+  width: 350px;
+  margin: 70px auto;
+}
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #3f51b5 !important;
+  box-shadow: 0 1px 0 0 #3f51b5 !important;
+}
+
+.input-field input[type=password]:focus {
+  border-bottom: 1px solid #3f51b5 !important;
+  box-shadow: 0 1px 0 0 #3f51b5 !important;
+}
+
+/* Profile */
+
+.profile {
+  max-width: 970px;
+  margin: 0px auto;
+}
+
+.profileTop {
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 10px;
+}
+
+.profileTop button {
+  margin: 10px 10px;
+}
+
+#profileInfo {
+  display: flex;
+  justify-content: center;
+  margin: 18px 0px;
+}
+
+.profileImg {
+  height: 160px;
+  width: 160px;
+  border-radius: 80px;
+}
+
+@media (max-width: 600px) {
+  .profileImg {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+  }
+}
+
+.updatePic .file-path-wrapper {
+  display: none;
+}
+
+.userInfo {
+  text-align: center;
+}
+
+.userInfo1 {
+  display: flex;
+  justify-content: space-around;
+  width: 115%;
+}
+
+.item {
+  width: 30%;
+}
+
+div.MuiGrid-grid-xs-4 {
+  text-align: center;
+}
+
+div.postGallery {
+  justify-content: space-between;
+}
+
+/* Home */
+
+.home {
+  margin-top: 100px;
+}
+
+.home-card {
+  max-width: 500px;
+  height: max-content;
+}
+
+.card-title {
+  padding: 6px;
+  font-weight: 400;
+}
+
+div.currentUserAvatar {
+  width: 35px!important;
+  height: 35px!important;
+}
+
+.user-name {
+  font-weight: bolder;
+  color: black;
+  padding-right: 5px;
+  font-size: 1rem;
+}
+
+.user-name.MuiCardHeader-root {
+  padding: 8px 16px;
+  border-bottom: 1px solid lightgray;
+}
+
+.user-name .MuiCardHeader-content span{
+  font-weight: bold;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.like, .unlike {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.changeColor {
+  color: black;
+}
+
+div.MuiCardActions-root {
+  padding: 0 8px;
+  display: flex;
+}
+
+.likedBy {
+  padding: 0 16px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.commentForm {
+  display: flex;
+  padding: 0 15px;
+  border-top: 1px solid lightgray;
+}
+
+.commentForm input {
+  border-bottom: none!important;
+  margin: 0!important;
+}
+
+.commentForm input[type=text]:focus {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.commentForm button {
+  font-weight: bolder;
+  border: none;
+  background-color: white;
+  color: #3f51b5;
+}
+
+.commentForm button:hover {
+  cursor: pointer;
+}
+
+div.paper {
+  position: absolute;
+  width: 400px;
+  background-color: white;
+  /* border: 1px solid #000; */
+  padding: 15px;
+  border-radius: 5px;
+}
+
+div.modalAlign {
+  top: 25%!important;
+  left: 50%!important;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  /* background-color: #ddd!important; */
+}
+
+div.paper h4 {
+  margin-top: 5px;
+  padding-bottom: 5px ;
+  border-bottom: 1px solid lightgray;
+}
+
+div.MuiPaper-elevation1 {
+  box-shadow: none;
+}
+
+div.MuiCardMedia-root {
+  border-bottom: 1px solid lightgray;
+}
+
+/* Create Post */
+
+.createCard {
+  margin: 150px auto;
+  max-width: 500px;
+  padding: 20px;
+  text-align: center;
+}
+
+.uploadImg {
+  display: flex;
+}
+
+#toast-container {
+  top: 30px;
+  right: 20px;
+  left: auto;
+}
+
+/* Navbar */
+
+.logout {
+  margin-right: 10px;
+}
+
+/* User Profile */
+
+button.followButton {
+  margin-top: 30px;
+  margin-left: 35px;
+  width: 85%;
+  padding: 2px 16px;
+}
+
+/* Appbar */
+
+h4.MuiTypography-h4 {
+  font-family: 'Grand Hotel', cursive;
+}
+
+/* div.appbarContainer {
+  padding: 0 18%;
+} */
+
+svg.MuiSvgIcon-root {
+  font-size: 1.9rem;
+}
+
+div.MuiAvatar-root {
+  height: 27px;
+  width: 27px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block; opacity: 1;}
